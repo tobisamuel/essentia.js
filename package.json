@@ -39,7 +39,8 @@
     "build-wasm": "make -f Makefile.essentiajs build",
     "build-js-api": "rollup --config",
     "build-api-docs": "./build-docs.sh",
-    "test": "mocha"
+    "test": "mocha",
+    "postinstall": "npm run build-js-api"
   },
   "directories": {
     "doc": "docs",
